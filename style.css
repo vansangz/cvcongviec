@@ -1,0 +1,152 @@
+body {
+  background-color: #8ec5fc;
+  background-image: linear-gradient(
+    62deg,
+    #8ec5fc 0%,
+    #e0c3fc 50%,
+    #ffffff 100%
+  );
+  h1 {
+    color: #333;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Bóng đổ cho chữ */
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+
+  h1:hover {
+    color: hsla(206, 30%, 91%, 0.948); /* Màu sắc thay đổi khi hover */
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); /* Bóng đổ mạnh hơn */
+  }
+  h2 {
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  h2:hover {
+    transform: translateX(10px); /* Dịch chuyển sang phải khi hover */
+    color: #504e34; /* Thay đổi màu chữ */
+  }
+  .so1,
+  .so2,
+  .so3,
+  .so4,
+  .so5,
+  .so6 {
+    position: absolute;
+    background: linear-gradient(45deg, #e9f1cd, #d16e67);
+    background-size: 200% 200%;
+    animation: gradientAnim 3s ease infinite; /* Hiệu ứng nền chuyển động */
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  @keyframes gradientAnim {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}
+.box1 {
+  position: absolute; /* Vị trí tuyệt đối */
+  top: 20px; /* Căn lên phía trên */
+  left: 100px; /* Căn vào phía trái */
+  z-index: 10; /* Đặt hình ảnh lên trên các phần tử khác nếu cần */
+}
+
+.box1 img {
+  width: 200px; /* Kích thước hình ảnh */
+  height: 200px; /* Chiều cao hình ảnh */
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #333; /* Viền ban đầu không có màu */
+  transition: all 0.3s ease; /* Hiệu ứng mượt mà */
+}
+.box1 img:hover {
+  border: 2px solid hsl(309, 22%, 71%); /* Đổi màu viền khi hover */
+  box-shadow: 0 0 25px #e787e2; /* Viền sáng lên và bóng đổ */
+}
+h1,
+h2 {
+  border: 2px solid transparent;
+  padding: 10px;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+.so1 {
+  position: absolute;
+  top: 210px;
+  left: 20px;
+}
+.gioithieu {
+  position: absolute;
+  top: 270px;
+  left: 30px;
+  width: 400px;
+  height: 200px;
+}
+.so2 {
+  position: absolute;
+  top: 500px;
+  left: 20px;
+}
+.muctieu {
+  position: absolute;
+  top: 560px;
+  left: 30px;
+  width: 400px;
+  height: 200px;
+}
+.so3 {
+  position: absolute;
+  top: 40px;
+  left: 600px;
+}
+.hocvan {
+  position: absolute;
+  top: 100px;
+  left: 600px;
+  width: 600px;
+  height: 200px;
+}
+.so4 {
+  position: absolute;
+  top: 200px;
+  left: 600px;
+}
+.kynang {
+  position: absolute;
+  top: 260px;
+  left: 600px;
+  width: 600px;
+  height: 200px;
+}
+.so5 {
+  position: absolute;
+  top: 460px;
+  left: 600px;
+}
+.sothich {
+  position: absolute;
+  top: 510px;
+  left: 600px;
+  width: 600px;
+  height: 200px;
+}
+.so6 {
+  position: absolute;
+  top: 610px;
+  left: 600px;
+}
+.lienhe {
+  position: absolute;
+  top: 670px;
+  left: 600px;
+  width: 600px;
+  height: 200px;
+}
